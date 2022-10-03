@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Registro de Ventas</title>
+		<link rel="icon" href="resources/img/icono.png" type="image/png"sizes="50x50">
+		<! Aquí definimos los Scrit js para esta página -->
+		<script src="resources/js/auto-pantalla.js"></script>
+
+
+		<script src="resources/js/main.js"></script>
+		<script src="resources/js/basic_calc.js"></script>
+		<script src="resources/js/basic_functions.js"></script>
+		<script src="resources/js/import_cvs.js"></script>
+		<script src="resources/js/export_cvs.js"></script>
+		<script src="resources/js/menus.js"></script>
+
+
+		<script src="resources/js/historial.js"></script>
+
+		<script src="resources/node_modules/papaparse/papaparse.min.js"></script>
+		<script src="resources/node_modules/xlsx/xlsx.js"></script>
+
+		<!<script type="text/javascript" src="https://unpkg.com/xlsx@0.14.1/dist/xlsx.full.min.js"><!</script>
+		<!<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"> <!</script>
+
+
+
+		<! Fin del js -->
+		<! Aquí definimos los estilo CSS para esta página -->
+		<link rel="stylesheet" href="resources/css/main.css"></link>
+		<link rel="stylesheet" href="resources/css/basic-class.css"></link>
+
+		<link rel="stylesheet" href="resources/css/auto-pantalla.css"></link>
+
+
+		<! Fin del CSS -->
+	</head>
+	<body onLoad="init();">
+		 <!<button class="" type="button" id="but_test" onclick="click_test();"> <!Test</button> 
+
+
+		<! ------- Seccion3 Historial de ventas ------------- >
+		<section class="label_style" id="seccion3">
+			<div class="cajas_style">
+				<label class="" for="archivos">Seleccione archivo: </label>
+				<input class="custom-file-input" type="file" id="file_hist" accept=".csv">
+			</div>
+			<div class="cajas_style">Por Fecha: 
+				<select class="mask_style" id="selchisfec"></select>
+			</div>
+			<div class="cajas_style">Por Estado: 
+				<select class="mask_style" id="selcthisetd"></select>
+			</div>
+			<div class="cajas_style">Total: 
+				<input disabled="" class="mask_style" id="totalhist">
+			</div>
+			<section class="label_style" id="historialventa"></section>
+		</section>
+
+	</body>
+</html>
